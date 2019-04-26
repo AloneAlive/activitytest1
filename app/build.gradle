@@ -25,4 +25,8 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    //增加百分百布局依赖,在/home/ts/Android/Sdk/extras/android/m2repository/com/android/support寻找支持的版本
+    implementation 'com.android.support:percent:24.2.1'
+    //增加recyclerview
+    implementation 'com.android.support:recyclerview-v7:24.2.1'
 }

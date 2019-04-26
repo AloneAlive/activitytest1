@@ -3,6 +3,7 @@ package com.example.ts.activitytest1;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v7.app.ActionBar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -21,7 +22,14 @@ public class FirstActivity extends BaseActivity {
 
         super.onCreate(savedInstanceState);   //创建活动
         Log.d("Mylog", this.toString() + ", TaskId=" + getTaskId());   //查看启动方式，默认是Standrad
-        setContentView(R.layout.first_layout); //add layout file
+        setContentView(R.layout.d_first_layout); //add layout file
+
+        //隐藏默认的标题栏
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.hide();
+        }
+
 
         //触碰按钮增加提醒方式
         Button button1 = findViewById(R.id.button1);
@@ -103,6 +111,56 @@ public class FirstActivity extends BaseActivity {
             @Override
             public void onClick(View view) {
                 ThirdActivity.actionStart(FirstActivity.this, "data1", "data2");
+            }
+        });
+
+        Button button7 = findViewById(R.id.button7);
+        button7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(FirstActivity.this, "Jump to Linear Layout", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(FirstActivity.this, LineraLayoutActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button button8 = findViewById(R.id.button8);
+        button8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(FirstActivity.this, "Jump to Relative Layout", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(FirstActivity.this, RelativeLayoutActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button button9 = findViewById(R.id.button9);
+        button9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(FirstActivity.this, "Jump to Frame Layout", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(FirstActivity.this, c_FrameLayoutActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button button10 = findViewById(R.id.button10);
+        button10.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(FirstActivity.this, "Jump to ListView Layout", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(FirstActivity.this, ListViewActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button button11 = findViewById(R.id.button11);
+        button11.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(FirstActivity.this, "Jump to MainFragmentActivity Layout", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(FirstActivity.this, d_MainFragmentActivity.class);
+                startActivity(intent);
             }
         });
     }

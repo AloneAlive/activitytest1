@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <!--修改启动方式为singleTask/singleTop,默认的是Standard-->
+
+        <!-- 修改启动方式为singleTask/singleTop,默认的是Standard -->
         <activity
             android:name=".FirstActivity"
             android:label="FirstActivity">
@@ -34,23 +35,28 @@
             <!-- <data android:scheme="http"></data> -->
             <!-- </intent-filter> -->
         </activity>
-
         <activity android:name=".NormalActivity" />
-        <!--<activity android:name=".BaseActivity" />-->
+        <!-- <activity android:name=".BaseActivity" /> -->
 
-        <!--对话框指定主题-->
-        <activity android:name=".DislogActivity" android:theme="@style/Theme.AppCompat.Dialog">
-        </activity>
 
-        <activity android:name=".ActivityLifeCycleTest"
-            android:launchMode="singleInstance"
-            >
+        <!-- 对话框指定主题 -->
+        <activity
+            android:name=".DislogActivity"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+        <activity
+            android:name=".ActivityLifeCycleTest"
+            android:launchMode="singleInstance">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".LineraLayoutActivity" />
+        <activity android:name=".RelativeLayoutActivity" />
+        <activity android:name=".c_FrameLayoutActivity" />
+        <activity android:name=".ListViewActivity" />
+        <activity android:name=".d_MainFragmentActivity"></activity>
     </application>
 
 </manifest>

@@ -1,9 +1,20 @@
-project name: activitytest1
+For Android App study
 
-(学习《第一行代码》前两章节)
+主要是Android App的基础，从创建到显示一些基本的控件。
+Include:
 
-包含内容：
-（1）Activity创建和布局文件
-（2）Intent发送（显式、隐式、传送数据）
-（3）Activity启动四张方式
-（4）包装一个BaseActivity基类
+(1)Intent:
+显式、隐式发送；
+接收并return数据；
+
+(2)启动方式：
+Standard
+singleTop
+singleTask
+singleInstance
+
+(3)布局方式
+
+(4)碎片
+
+(5)按钮、界面

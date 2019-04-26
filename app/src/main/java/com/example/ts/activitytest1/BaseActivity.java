@@ -9,16 +9,16 @@ public class BaseActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Log.d("BaseActivity", getClass().getSimpleName());
+        Log.d("Mylog:BaseActivity", getClass().getSimpleName());
         ActivityCollector.addActivity(this);
-        Log.d("BaseActivity", "Add activity " + getClass().getSimpleName());
+        Log.d("Mylog:BaseActivity", "Add activity " + getClass().getSimpleName());
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
         ActivityCollector.removeActivity(this);
-        Log.d("BaseActivity", "Remove activity " + getClass().getSimpleName());
+        Log.d("Mylog:BaseActivity", "Remove activity " + getClass().getSimpleName());
     }
 
 }

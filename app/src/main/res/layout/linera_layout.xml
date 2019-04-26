@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/Input_message"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:textAllCaps="false"
+        android:layout_gravity="top"
+        android:layout_height="wrap_content"
+        android:hint="Type Something"/>
+
+    <Button
+        android:id="@+id/linear_button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:layout_gravity="top"
+        android:text="linear_button1"/>
+
+    <!--<Button-->
+        <!--android:id="@+id/linear_button2"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAllCaps="false"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:text="linear_button2"/>-->
+
+    <!--<Button-->
+        <!--android:id="@+id/linear_button3"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAllCaps="false"-->
+        <!--android:layout_gravity="bottom"-->
+        <!--android:text="linear_button3"/>-->
+</LinearLayout>
